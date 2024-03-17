@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background-color: #F7DED0;
+}
+
+.container{
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    margin: 2rem 0;
+
+    .header-p{
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+
+    .info{
+        margin-top: 1rem;
+        font-size: 2.4rem;
+    }
+}
+
+h1{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.chessboard-container{
+    display: flex;
+}
+
+.chessboard{
+    cursor: pointer;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 8rem);
+    grid-template-rows: repeat(8, 8rem);
+    justify-content: center;
+
+    .chessboard-field{
+        background-color: #fff;
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .black{
+        background-color: #000;
+    }
+    .start-field{
+        background-color: #cbf078;
+    }
+    .move{
+        background-color: #f8b400;
+    }
+    .end-field{
+        background-color: #e46161;
+    }
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: #FEECE2;
+    font-size: 2.2rem;
+    padding: 1.5rem 0;
+    text-align: center;
+
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+}
